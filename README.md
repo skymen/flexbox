@@ -1,9 +1,9 @@
 <img src="./examples/cover.png" width="150" /><br>
-# UI Element
+# UI
 <i>A flexbox layout behavior for Construct 3.</i> <br>
-### Version 1.0.0.1
+### Version 1.0.0.2
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/flexbox/releases/download/flexbox-1.0.0.1.c3addon/flexbox-1.0.0.1.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/flexbox/releases/download/flexbox-1.0.0.2.c3addon/flexbox-1.0.0.2.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/flexbox/releases) </sub> <br>
 
@@ -53,9 +53,9 @@ npm run dev
 | --- | --- | --- |
 | Add Classes | Adds classes to the UI element | Classes             *(string)* <br> |
 | Remove Classes | Removes classes from the UI element | Classes             *(string)* <br> |
-| Remove Style Property | Removes a specific style property from the UI element | Property             *(string)* <br> |
 | Set Classes | Sets the classes of the UI element | Classes             *(string)* <br> |
 | Set Enabled | Sets the enabled state of the UI element | Enabled             *(boolean)* <br> |
+| Remove Style Property | Removes a specific style property from the UI element | Property             *(string)* <br> |
 | Set Style | Sets the style of the UI element | Style             *(string)* <br> |
 | Set Style Property | Sets a specific style property of the UI element | Property             *(string)* <br>Value             *(string)* <br> |
 

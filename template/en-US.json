@@ -4,11 +4,13 @@
   "text": {
     "behaviors": {
       "flexbox": {
-        "name": "UI Element",
+        "name": "UI",
         "description": "A flexbox layout behavior for Construct 3.",
         "help-url": "https://www.construct.net",
         "aceCategories": {
-          "general": "general"
+          "classes": "classes",
+          "flow": "flow",
+          "style": "style"
         },
         "properties": {
           "enabled": {
@@ -27,7 +29,7 @@
         "actions": {
           "AddClasses": {
             "list-name": "Add Classes",
-            "display-text": "Add Classes {0}",
+            "display-text": "{my}: Add [b]{0}[/b] to classes",
             "description": "Adds classes to the UI element",
             "params": {
               "classes": {
@@ -38,7 +40,7 @@
           },
           "RemoveClasses": {
             "list-name": "Remove Classes",
-            "display-text": "Remove Classes {0}",
+            "display-text": "{my}: Remove [b]{0}[/b] from classes",
             "description": "Removes classes from the UI element",
             "params": {
               "classes": {
@@ -47,20 +49,9 @@
               }
             }
           },
-          "RemoveStyleProperty": {
-            "list-name": "Remove Style Property",
-            "display-text": "Remove Style Property {0}",
-            "description": "Removes a specific style property from the UI element",
-            "params": {
-              "property": {
-                "name": "Property",
-                "desc": "The CSS property to remove"
-              }
-            }
-          },
           "SetClasses": {
             "list-name": "Set Classes",
-            "display-text": "Set Classes {0}",
+            "display-text": "{my}: Set classes to [b]{0}[/b]",
             "description": "Sets the classes of the UI element",
             "params": {
               "classes": {
@@ -71,7 +62,7 @@
           },
           "SetEnabled": {
             "list-name": "Set Enabled",
-            "display-text": "Set Enabled {0}",
+            "display-text": "{my}: Set Enabled: [b]{0}[/b]",
             "description": "Sets the enabled state of the UI element",
             "params": {
               "enabled": {
@@ -80,9 +71,20 @@
               }
             }
           },
+          "RemoveStyleProperty": {
+            "list-name": "Remove Style Property",
+            "display-text": "{my}: Remove property [b]{0}[/b] from style",
+            "description": "Removes a specific style property from the UI element",
+            "params": {
+              "property": {
+                "name": "Property",
+                "desc": "The CSS property to remove"
+              }
+            }
+          },
           "SetStyle": {
             "list-name": "Set Style",
-            "display-text": "Set Style to {0}",
+            "display-text": "{my}: Set style to [i]{0}[/i]",
             "description": "Sets the style of the UI element",
             "params": {
               "style": {
@@ -93,7 +95,7 @@
           },
           "SetStyleProperty": {
             "list-name": "Set Style Property",
-            "display-text": "Set Style Property {0} to {1}",
+            "display-text": "{my}: Set style property [b]{0}[/b] to [b]{1}[/b]",
             "description": "Sets a specific style property of the UI element",
             "params": {
               "property": {
@@ -110,7 +112,7 @@
         "conditions": {
           "IsEnabled": {
             "list-name": "Is Enabled",
-            "display-text": "Is Enabled",
+            "display-text": "{my}: Is Enabled",
             "description": "Checks if the UI element is enabled",
             "params": {}
           }

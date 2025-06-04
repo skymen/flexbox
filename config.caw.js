@@ -8,7 +8,7 @@ import _version from "./version.js";
 export const addonType = ADDON_TYPE.BEHAVIOR;
 export const type = PLUGIN_TYPE.OBJECT;
 export const id = "flexbox";
-export const name = "UI Element";
+export const name = "UI";
 export const version = _version;
 export const minConstructVersion = undefined;
 export const author = "skymen";

@@ -1,16 +1,18 @@
 import { action, condition, expression } from "../template/aceDefine.js";
 
-const category = "general";
+const flow = "flow";
+const classes = "classes";
+const style = "style";
 
 action(
-  category,
+  flow,
   "SetEnabled",
   {
     highlight: false,
     deprecated: false,
     isAsync: false,
     listName: "Set Enabled",
-    displayText: "Set Enabled {0}",
+    displayText: "{my}: Set Enabled: [b]{0}[/b]",
     description: "Sets the enabled state of the UI element",
     params: [
       {
@@ -28,13 +30,13 @@ action(
 );
 
 condition(
-  category,
+  flow,
   "IsEnabled",
   {
     highlight: false,
     deprecated: false,
     listName: "Is Enabled",
-    displayText: "Is Enabled",
+    displayText: "{my}: Is Enabled",
     description: "Checks if the UI element is enabled",
     params: [],
   },
@@ -45,14 +47,14 @@ condition(
 
 // set classes, add classes, remove classes, set style, set style property, remove style property
 action(
-  category,
+  classes,
   "SetClasses",
   {
-    highlight: false,
+    highlight: true,
     deprecated: false,
     isAsync: false,
     listName: "Set Classes",
-    displayText: "Set Classes {0}",
+    displayText: "{my}: Set classes to [b]{0}[/b]",
     description: "Sets the classes of the UI element",
     params: [
       {
@@ -71,14 +73,14 @@ action(
 );
 
 action(
-  category,
+  classes,
   "AddClasses",
   {
     highlight: false,
     deprecated: false,
     isAsync: false,
     listName: "Add Classes",
-    displayText: "Add Classes {0}",
+    displayText: "{my}: Add [b]{0}[/b] to classes",
     description: "Adds classes to the UI element",
     params: [
       {
@@ -97,14 +99,14 @@ action(
 );
 
 action(
-  category,
+  classes,
   "RemoveClasses",
   {
     highlight: false,
     deprecated: false,
     isAsync: false,
     listName: "Remove Classes",
-    displayText: "Remove Classes {0}",
+    displayText: "{my}: Remove [b]{0}[/b] from classes",
     description: "Removes classes from the UI element",
     params: [
       {
@@ -123,14 +125,14 @@ action(
 );
 
 action(
-  category,
+  style,
   "SetStyle",
   {
-    highlight: false,
+    highlight: true,
     deprecated: false,
     isAsync: false,
     listName: "Set Style",
-    displayText: "Set Style to {0}",
+    displayText: "{my}: Set style to [i]{0}[/i]",
     description: "Sets the style of the UI element",
     params: [
       {
@@ -149,14 +151,14 @@ action(
 );
 
 action(
-  category,
+  style,
   "SetStyleProperty",
   {
     highlight: false,
     deprecated: false,
     isAsync: false,
     listName: "Set Style Property",
-    displayText: "Set Style Property {0} to {1}",
+    displayText: "{my}: Set style property [b]{0}[/b] to [b]{1}[/b]",
     description: "Sets a specific style property of the UI element",
     params: [
       {
@@ -182,14 +184,14 @@ action(
 );
 
 action(
-  category,
+  style,
   "RemoveStyleProperty",
   {
     highlight: false,
     deprecated: false,
     isAsync: false,
     listName: "Remove Style Property",
-    displayText: "Remove Style Property {0}",
+    displayText: "{my}: Remove property [b]{0}[/b] from style",
     description: "Removes a specific style property from the UI element",
     params: [
       {
