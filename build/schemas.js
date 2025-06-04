@@ -231,7 +231,9 @@ const configSchema = Joi.object({
       "monetisation",
       "platform-specific",
       "web",
-      "other"
+      "other",
+      "attributes",
+      "movements"
     ),
   files: Joi.object({
     extensionScript: Joi.object({

@@ -1,11 +1,11 @@
-<img src="./src/icon.svg?rand=8697" width="100" /><br>
-# Sample Addon
-<i>Description</i> <br>
-### Version 1.0.0.0
+<img src="./examples/cover.png" width="150" /><br>
+# UI Element
+<i>A flexbox layout behavior for Construct 3.</i> <br>
+### Version 1.0.0.1
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/ConstructFund/construct-addon-wizard-scaffold/releases/download/sample_addon-1.0.0.0.c3addon/sample_addon-1.0.0.0.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/flexbox/releases/download/flexbox-1.0.0.1.c3addon/flexbox-1.0.0.1.c3addon)
 <br>
-<sub> [See all releases](https://github.com/ConstructFund/construct-addon-wizard-scaffold/releases) </sub> <br>
+<sub> [See all releases](https://github.com/skymen/flexbox/releases) </sub> <br>
 
 ---
 <b><u>Author:</u></b> skymen <br>
@@ -35,37 +35,39 @@ npm run dev
 ```
 
 ## Examples Files
+| Description | Download |
+| --- | --- |
 
 ---
 ## Properties
 | Property Name | Description | Type |
 | --- | --- | --- |
+| Enabled | Whether the flexbox behavior is enabled. | check |
+| Classes | A space-separated list of classes to apply to the element. | text |
+| Style | Custom styles to apply to the element. | longtext |
 
 
 ---
 ## Actions
 | Action | Description | Params
 | --- | --- | --- |
-| Sample Action | This is a sample action | Param1             *(string)* <br> |
-| Sample Action Async | This is a sample action |  |
-| Sample Action Combo | This is a sample action | Param1             *(combo)* <br> |
-| Sample Action | This is a sample action | Param1             *(string)* <br> |
+| Add Classes | Adds classes to the UI element | Classes             *(string)* <br> |
+| Remove Classes | Removes classes from the UI element | Classes             *(string)* <br> |
+| Remove Style Property | Removes a specific style property from the UI element | Property             *(string)* <br> |
+| Set Classes | Sets the classes of the UI element | Classes             *(string)* <br> |
+| Set Enabled | Sets the enabled state of the UI element | Enabled             *(boolean)* <br> |
+| Set Style | Sets the style of the UI element | Style             *(string)* <br> |
+| Set Style Property | Sets a specific style property of the UI element | Property             *(string)* <br>Value             *(string)* <br> |
 
 
 ---
 ## Conditions
 | Condition | Description | Params
 | --- | --- | --- |
-| Sample Condition | This is a sample condition | Param1 *(string)* <br> |
-| Sample Trigger | This is a sample trigger |  |
-| Sample Condition | This is a sample condition | Param1 *(combo)* <br> |
-| Sample Condition | This is a sample condition |  |
+| Is Enabled | Checks if the UI element is enabled |  |
 
 
 ---
 ## Expressions
 | Expression | Description | Return Type | Params
 | --- | --- | --- | --- |
-| Expression | Sample Expression | number |  | 
-| Expression2 | Sample Expression | string |  | 
-| SampleExpression | This is a sample expression | string |  | 

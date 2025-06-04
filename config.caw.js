@@ -5,17 +5,17 @@ import {
   PROPERTY_TYPE,
 } from "./template/enums.js";
 import _version from "./version.js";
-export const addonType = ADDON_TYPE.PLUGIN;
+export const addonType = ADDON_TYPE.BEHAVIOR;
 export const type = PLUGIN_TYPE.OBJECT;
-export const id = "sample_addon";
-export const name = "Sample Addon";
+export const id = "flexbox";
+export const name = "UI Element";
 export const version = _version;
 export const minConstructVersion = undefined;
 export const author = "skymen";
 export const website = "https://www.construct.net";
 export const documentation = "https://www.construct.net";
-export const description = "Description";
-export const category = ADDON_CATEGORY.GENERAL;
+export const description = "A flexbox layout behavior for Construct 3.";
+export const category = ADDON_CATEGORY.ATTRIBUTES;
 
 export const hasDomside = false;
 export const files = {
@@ -45,7 +45,7 @@ export const info = {
     GooglePlayServicesEnabled: false,
 
     // BEHAVIOR only
-    IsOnlyOneAllowed: false,
+    IsOnlyOneAllowed: true,
 
     // PLUGIN world only
     IsResizable: false,
@@ -109,4 +109,34 @@ export const properties = [
     desc: "Property Description",
   }
   */
+  {
+    type: PROPERTY_TYPE.CHECK,
+    id: "enabled",
+    options: {
+      initialValue: true,
+      interpolatable: false,
+    },
+    name: "Enabled",
+    desc: "Whether the flexbox behavior is enabled.",
+  },
+  {
+    type: PROPERTY_TYPE.TEXT,
+    id: "classes",
+    options: {
+      initialValue: "",
+      interpolatable: false,
+    },
+    name: "Classes",
+    desc: "A space-separated list of classes to apply to the element.",
+  },
+  {
+    type: PROPERTY_TYPE.LONGTEXT,
+    id: "style",
+    options: {
+      initialValue: "",
+      interpolatable: false,
+    },
+    name: "Style",
+    desc: "Custom styles to apply to the element.",
+  },
 ];

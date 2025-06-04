@@ -6,8 +6,63 @@ export default function (parentClass) {
     constructor() {
       super();
       const properties = this._getInitProperties();
+      this.enabled = true;
+      this.classes = [];
+      this.style = {};
+      this._computedStyles = undefined;
       if (properties) {
+        this.enabled = properties[0];
+        this.setClasses(properties[1]);
+        this.setStyle(properties[2]);
       }
+    }
+
+    _postCreate() {
+      this.instance.__flexbox_ui_element = this;
+    }
+
+    addClass(...classes) {
+      classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
+      this.classes = [...new Set([...this.classes, ...classes])];
+      this._computedStyles = undefined;
+    }
+
+    removeClass(...classes) {
+      classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
+      this.classes = this.classes.filter((c) => !classes.includes(c));
+      this._computedStyles = undefined;
+    }
+
+    setClasses(...classes) {
+      classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
+      this.classes = classes;
+      this._computedStyles = undefined;
+    }
+
+    setStyle(style) {
+      this.style = this.behavior.controller.layout.parseStyle(style);
+      this._computedStyles = undefined;
+    }
+
+    setStyleProperty(property, value) {
+      this.behavior.controller.layout.setPropertyInStyle(
+        this.style,
+        property,
+        value
+      );
+      this._computedStyles = undefined;
+    }
+
+    removeStyleProperty(property) {
+      this.behavior.controller.layout.removePropertyFromStyle(
+        this.style,
+        property
+      );
+      this._computedStyles = undefined;
+    }
+
+    _tick() {
+      console.log("tick");
     }
 
     _trigger(method) {
@@ -53,12 +108,19 @@ export default function (parentClass) {
 
     _saveToJson() {
       return {
-        // data to be saved for savegames
+        enabled: this.enabled,
+        classes: this.classes,
+        style: this.style,
+        computedStyles: this._computedStyles,
       };
     }
 
     _loadFromJson(o) {
-      // load state for savegames
+      this.enabled = o.enabled !== undefined ? o.enabled : true;
+      this.classes = o.classes !== undefined ? o.classes : [];
+      this.style = o.style !== undefined ? o.style : {};
+      this._computedStyles =
+        o.computedStyles !== undefined ? o.computedStyles : {};
     }
   };
 }
