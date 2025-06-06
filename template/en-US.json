@@ -6,7 +6,7 @@
       "flexbox": {
         "name": "UI",
         "description": "A flexbox layout behavior for Construct 3.",
-        "help-url": "https://www.construct.net",
+        "help-url": "https://constructfund.github.io/construct3-ui",
         "aceCategories": {
           "classes": "classes",
           "flow": "flow",
