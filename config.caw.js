@@ -12,7 +12,8 @@ export const name = "UI";
 export const version = _version;
 export const minConstructVersion = undefined;
 export const author = "skymen";
-export const website = "https://constructfund.github.io/construct3-ui";
+export const website =
+  "https://www.construct.net/en/make-games/addons/1450/ui-element";
 export const documentation = "https://constructfund.github.io/construct3-ui";
 export const description = "A flexbox layout behavior for Construct 3.";
 export const category = ADDON_CATEGORY.ATTRIBUTES;
