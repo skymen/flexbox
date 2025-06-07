@@ -1,0 +1,31 @@
+{
+  "languageTag": "ar-SA",
+  "fileDescription": "سلاسل لـ flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "واجهة المستخدم",
+        "description": "سلوك تخطيط flexbox لـ Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "مفعل",
+            "desc": "ما إذا كان سلوك flexbox مفعلًا."
+          },
+          "classes": {
+            "name": "الفئات",
+            "desc": "قائمة مفصولة بمسافات من الفئات لتطبيقها على العنصر."
+          },
+          "style": {
+            "name": "النمط",
+            "desc": "أنماط مخصصة لتطبيقها على العنصر."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

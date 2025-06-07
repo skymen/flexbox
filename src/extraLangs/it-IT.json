@@ -1,0 +1,31 @@
+{
+  "languageTag": "it-IT",
+  "fileDescription": "Stringhe per flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "Interfaccia Utente",
+        "description": "Un comportamento di layout flexbox per Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Abilitato",
+            "desc": "Se il comportamento flexbox è abilitato."
+          },
+          "classes": {
+            "name": "Classi",
+            "desc": "Un elenco di classi separate da spazi da applicare all'elemento."
+          },
+          "style": {
+            "name": "Stile",
+            "desc": "Stili personalizzati da applicare all'elemento."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

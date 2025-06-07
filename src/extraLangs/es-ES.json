@@ -1,0 +1,31 @@
+{
+  "languageTag": "es-ES",
+  "fileDescription": "Cadenas para flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "Interfaz de usuario",
+        "description": "Un comportamiento de diseño flexbox para Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Habilitado",
+            "desc": "Si el comportamiento flexbox está habilitado."
+          },
+          "classes": {
+            "name": "Clases",
+            "desc": "Una lista de clases separadas por espacios para aplicar al elemento."
+          },
+          "style": {
+            "name": "Estilo",
+            "desc": "Estilos personalizados para aplicar al elemento."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

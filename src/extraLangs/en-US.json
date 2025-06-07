@@ -1,0 +1,33 @@
+```json
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "A flexbox layout behavior for Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Enabled",
+            "desc": "Whether the flexbox behavior is enabled."
+          },
+          "classes": {
+            "name": "Classes",
+            "desc": "A space-separated list of classes to apply to the element."
+          },
+          "style": {
+            "name": "Style",
+            "desc": "Custom styles to apply to the element."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}
+```

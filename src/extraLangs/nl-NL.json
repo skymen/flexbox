@@ -1,0 +1,31 @@
+{
+  "languageTag": "nl-NL",
+  "fileDescription": "Strings voor flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Een flexbox lay-out gedrag voor Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Ingeschakeld",
+            "desc": "Of het flexbox gedrag is ingeschakeld."
+          },
+          "classes": {
+            "name": "Klassen",
+            "desc": "Een spatie-gescheiden lijst van klassen die op het element moeten worden toegepast."
+          },
+          "style": {
+            "name": "Stijl",
+            "desc": "Aangepaste stijlen die op het element moeten worden toegepast."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "languageTag": "ko-KR",
+  "fileDescription": "플렉스박스 문자열.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Construct 3용 플렉스박스 레이아웃 동작.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "활성화",
+            "desc": "플렉스박스 동작이 활성화되어 있는지 여부."
+          },
+          "classes": {
+            "name": "클래스",
+            "desc": "요소에 적용할 클래스의 공백으로 구분된 목록."
+          },
+          "style": {
+            "name": "스타일",
+            "desc": "요소에 적용할 사용자 정의 스타일."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

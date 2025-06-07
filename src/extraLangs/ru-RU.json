@@ -1,0 +1,31 @@
+{
+  "languageTag": "ru-RU",
+  "fileDescription": "Строки для flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Поведение макета flexbox для Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Включено",
+            "desc": "Включено ли поведение flexbox."
+          },
+          "classes": {
+            "name": "Классы",
+            "desc": "Список классов, разделенных пробелами, которые нужно применить к элементу."
+          },
+          "style": {
+            "name": "Стиль",
+            "desc": "Пользовательские стили, которые нужно применить к элементу."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

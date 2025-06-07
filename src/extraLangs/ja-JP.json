@@ -1,0 +1,31 @@
+{
+  "languageTag": "ja-JP",
+  "fileDescription": "フレックスボックス用の文字列。",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Construct 3のためのフレックスボックスレイアウトの動作。",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "有効",
+            "desc": "フレックスボックスの動作が有効かどうか。"
+          },
+          "classes": {
+            "name": "クラス",
+            "desc": "要素に適用するクラスのスペース区切りリスト。"
+          },
+          "style": {
+            "name": "スタイル",
+            "desc": "要素に適用するカスタムスタイル。"
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

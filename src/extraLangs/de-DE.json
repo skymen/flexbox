@@ -1,0 +1,31 @@
+{
+  "languageTag": "de-DE",
+  "fileDescription": "Strings für Flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Ein Flexbox-Layoutverhalten für Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Aktiviert",
+            "desc": "Ob das Flexbox-Verhalten aktiviert ist."
+          },
+          "classes": {
+            "name": "Klassen",
+            "desc": "Eine durch Leerzeichen getrennte Liste von Klassen, die auf das Element angewendet werden sollen."
+          },
+          "style": {
+            "name": "Stil",
+            "desc": "Benutzerdefinierte Stile, die auf das Element angewendet werden sollen."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

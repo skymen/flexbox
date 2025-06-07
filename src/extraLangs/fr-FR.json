@@ -1,0 +1,31 @@
+{
+  "languageTag": "fr-FR",
+  "fileDescription": "Chaînes pour flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Un comportement de mise en page flexbox pour Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Activé",
+            "desc": "Indique si le comportement flexbox est activé."
+          },
+          "classes": {
+            "name": "Classes",
+            "desc": "Une liste de classes séparées par des espaces à appliquer à l'élément."
+          },
+          "style": {
+            "name": "Style",
+            "desc": "Styles personnalisés à appliquer à l'élément."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

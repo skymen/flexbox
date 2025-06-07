@@ -1,0 +1,31 @@
+{
+  "languageTag": "zh-CN",
+  "fileDescription": "Flexbox 的字符串。",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "用户界面",
+        "description": "Construct 3 的 Flexbox 布局行为。",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "启用",
+            "desc": "是否启用 Flexbox 行为。"
+          },
+          "classes": {
+            "name": "类",
+            "desc": "要应用于元素的以空格分隔的类列表。"
+          },
+          "style": {
+            "name": "样式",
+            "desc": "要应用于元素的自定义样式。"
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}
