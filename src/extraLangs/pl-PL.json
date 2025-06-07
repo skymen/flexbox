@@ -1,0 +1,31 @@
+{
+  "languageTag": "pl-PL",
+  "fileDescription": "Ciągi dla flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Zachowanie układu flexbox dla Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Włączone",
+            "desc": "Czy zachowanie flexbox jest włączone."
+          },
+          "classes": {
+            "name": "Klasy",
+            "desc": "Lista klas oddzielonych spacjami do zastosowania w elemencie."
+          },
+          "style": {
+            "name": "Styl",
+            "desc": "Niestandardowe style do zastosowania w elemencie."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

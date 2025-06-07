@@ -1,0 +1,31 @@
+{
+  "languageTag": "sv-SE",
+  "fileDescription": "Strängar för flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "Ett flexbox-layoutbeteende för Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Aktiverad",
+            "desc": "Om flexbox-beteendet är aktiverat."
+          },
+          "classes": {
+            "name": "Klasser",
+            "desc": "En mellanslagsseparerad lista över klasser som ska tillämpas på elementet."
+          },
+          "style": {
+            "name": "Stil",
+            "desc": "Anpassade stilar som ska tillämpas på elementet."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

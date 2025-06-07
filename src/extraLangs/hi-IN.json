@@ -1,0 +1,31 @@
+{
+  "languageTag": "hi-IN",
+  "fileDescription": "फ्लेक्सबॉक्स के लिए स्ट्रिंग्स।",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "यूआई",
+        "description": "कंस्ट्रक्ट 3 के लिए एक फ्लेक्सबॉक्स लेआउट व्यवहार।",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "सक्षम",
+            "desc": "क्या फ्लेक्सबॉक्स व्यवहार सक्षम है।"
+          },
+          "classes": {
+            "name": "क्लासेस",
+            "desc": "तत्व पर लागू करने के लिए स्पेस-सेपरेटेड क्लासेस की सूची।"
+          },
+          "style": {
+            "name": "शैली",
+            "desc": "तत्व पर लागू करने के लिए कस्टम शैलियाँ।"
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

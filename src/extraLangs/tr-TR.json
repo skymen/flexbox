@@ -1,0 +1,31 @@
+{
+  "languageTag": "tr-TR",
+  "fileDescription": "Flexbox için dizgeler.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "Kullanıcı Arayüzü",
+        "description": "Construct 3 için bir flexbox düzen davranışı.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Etkin",
+            "desc": "Flexbox davranışının etkin olup olmadığı."
+          },
+          "classes": {
+            "name": "Sınıflar",
+            "desc": "Eleman için uygulanacak sınıfların boşlukla ayrılmış listesi."
+          },
+          "style": {
+            "name": "Stil",
+            "desc": "Eleman için uygulanacak özel stiller."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}

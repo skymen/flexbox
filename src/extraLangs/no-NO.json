@@ -1,0 +1,31 @@
+{
+  "languageTag": "no-NO",
+  "fileDescription": "Strenger for flexbox.",
+  "text": {
+    "behaviors": {
+      "flexbox": {
+        "name": "UI",
+        "description": "En flexbox-layoutatferd for Construct 3.",
+        "help-url": "https://constructfund.github.io/construct3-ui",
+        "aceCategories": {},
+        "properties": {
+          "enabled": {
+            "name": "Aktivert",
+            "desc": "Om flexbox-atferden er aktivert."
+          },
+          "classes": {
+            "name": "Klasser",
+            "desc": "En liste med klasser atskilt med mellomrom som skal brukes på elementet."
+          },
+          "style": {
+            "name": "Stil",
+            "desc": "Egendefinerte stiler som skal brukes på elementet."
+          }
+        },
+        "actions": {},
+        "conditions": {},
+        "expressions": {}
+      }
+    }
+  }
+}
