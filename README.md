@@ -1,9 +1,9 @@
 <img src="./examples/cover.png" width="150" /><br>
 # UI
 <i>A flexbox layout behavior for Construct 3.</i> <br>
-### Version 1.0.0.4
+### Version 1.0.0.7
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/flexbox/releases/download/flexbox-1.0.0.4.c3addon/flexbox-1.0.0.4.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/flexbox/releases/download/flexbox-1.0.0.7.c3addon/flexbox-1.0.0.7.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/flexbox/releases) </sub> <br>
 

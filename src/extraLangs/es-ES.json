@@ -7,11 +7,15 @@
         "name": "Interfaz de usuario",
         "description": "Un comportamiento de diseño flexbox para Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "clases",
+          "flow": "flujo",
+          "style": "estilo"
+        },
         "properties": {
           "enabled": {
             "name": "Habilitado",
-            "desc": "Si el comportamiento flexbox está habilitado."
+            "desc": "Si el comportamiento de flexbox está habilitado."
           },
           "classes": {
             "name": "Clases",
@@ -22,8 +26,97 @@
             "desc": "Estilos personalizados para aplicar al elemento."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Agregar Clases",
+            "display-text": "{my}: Agregar [b]{0}[/b] a las clases",
+            "description": "Agrega clases al elemento de la interfaz de usuario",
+            "params": {
+              "classes": {
+                "name": "Clases",
+                "desc": "Una lista de clases separadas por espacios para agregar al elemento"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Eliminar Clases",
+            "display-text": "{my}: Eliminar [b]{0}[/b] de las clases",
+            "description": "Elimina clases del elemento de la interfaz de usuario",
+            "params": {
+              "classes": {
+                "name": "Clases",
+                "desc": "Una lista de clases separadas por espacios para eliminar del elemento"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Establecer Clases",
+            "display-text": "{my}: Establecer clases en [b]{0}[/b]",
+            "description": "Establece las clases del elemento de la interfaz de usuario",
+            "params": {
+              "classes": {
+                "name": "Clases",
+                "desc": "Una lista de clases separadas por espacios para aplicar al elemento"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Establecer Habilitado",
+            "display-text": "{my}: Establecer Habilitado: [b]{0}[/b]",
+            "description": "Establece el estado habilitado del elemento de la interfaz de usuario",
+            "params": {
+              "enabled": {
+                "name": "Habilitado",
+                "desc": "Si el elemento de la interfaz de usuario debe estar habilitado"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Eliminar Propiedad de Estilo",
+            "display-text": "{my}: Eliminar propiedad [b]{0}[/b] del estilo",
+            "description": "Elimina una propiedad de estilo específica del elemento de la interfaz de usuario",
+            "params": {
+              "property": {
+                "name": "Propiedad",
+                "desc": "La propiedad CSS a eliminar"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Establecer Estilo",
+            "display-text": "{my}: Establecer estilo en [i]{0}[/i]",
+            "description": "Establece el estilo del elemento de la interfaz de usuario",
+            "params": {
+              "style": {
+                "name": "Estilo",
+                "desc": "El estilo a aplicar al elemento"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Establecer Propiedad de Estilo",
+            "display-text": "{my}: Establecer propiedad de estilo [b]{0}[/b] en [b]{1}[/b]",
+            "description": "Establece una propiedad de estilo específica del elemento de la interfaz de usuario",
+            "params": {
+              "property": {
+                "name": "Propiedad",
+                "desc": "La propiedad CSS a establecer"
+              },
+              "value": {
+                "name": "Valor",
+                "desc": "El valor a establecer para la propiedad"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Está Habilitado",
+            "display-text": "{my}: Está Habilitado",
+            "description": "Verifica si el elemento de la interfaz de usuario está habilitado",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "Construct 3のためのフレックスボックスレイアウトの動作。",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "クラス",
+          "flow": "フロー",
+          "style": "スタイル"
+        },
         "properties": {
           "enabled": {
             "name": "有効",
@@ -22,8 +26,97 @@
             "desc": "要素に適用するカスタムスタイル。"
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "クラスを追加",
+            "display-text": "{my}: [b]{0}[/b]をクラスに追加",
+            "description": "UI要素にクラスを追加します。",
+            "params": {
+              "classes": {
+                "name": "クラス",
+                "desc": "要素に追加するクラスのスペース区切りリスト"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "クラスを削除",
+            "display-text": "{my}: [b]{0}[/b]をクラスから削除",
+            "description": "UI要素からクラスを削除します。",
+            "params": {
+              "classes": {
+                "name": "クラス",
+                "desc": "要素から削除するクラスのスペース区切りリスト"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "クラスを設定",
+            "display-text": "{my}: クラスを[b]{0}[/b]に設定",
+            "description": "UI要素のクラスを設定します。",
+            "params": {
+              "classes": {
+                "name": "クラス",
+                "desc": "要素に適用するクラスのスペース区切りリスト"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "有効を設定",
+            "display-text": "{my}: 有効を設定: [b]{0}[/b]",
+            "description": "UI要素の有効状態を設定します。",
+            "params": {
+              "enabled": {
+                "name": "有効",
+                "desc": "UI要素を有効にするかどうか"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "スタイルプロパティを削除",
+            "display-text": "{my}: スタイルからプロパティ[b]{0}[/b]を削除",
+            "description": "UI要素から特定のスタイルプロパティを削除します。",
+            "params": {
+              "property": {
+                "name": "プロパティ",
+                "desc": "削除するCSSプロパティ"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "スタイルを設定",
+            "display-text": "{my}: スタイルを[i]{0}[/i]に設定",
+            "description": "UI要素のスタイルを設定します。",
+            "params": {
+              "style": {
+                "name": "スタイル",
+                "desc": "要素に適用するスタイル"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "スタイルプロパティを設定",
+            "display-text": "{my}: スタイルプロパティ[b]{0}[/b]を[b]{1}[/b]に設定",
+            "description": "UI要素の特定のスタイルプロパティを設定します。",
+            "params": {
+              "property": {
+                "name": "プロパティ",
+                "desc": "設定するCSSプロパティ"
+              },
+              "value": {
+                "name": "値",
+                "desc": "プロパティに設定する値"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "有効かどうか",
+            "display-text": "{my}: 有効",
+            "description": "UI要素が有効かどうかを確認します。",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

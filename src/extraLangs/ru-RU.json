@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "Поведение макета flexbox для Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "классы",
+          "flow": "поток",
+          "style": "стиль"
+        },
         "properties": {
           "enabled": {
             "name": "Включено",
@@ -22,8 +26,97 @@
             "desc": "Пользовательские стили, которые нужно применить к элементу."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Добавить классы",
+            "display-text": "{my}: Добавить [b]{0}[/b] к классам",
+            "description": "Добавляет классы к элементу UI",
+            "params": {
+              "classes": {
+                "name": "Классы",
+                "desc": "Список классов, разделенных пробелами, которые нужно добавить к элементу"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Удалить классы",
+            "display-text": "{my}: Удалить [b]{0}[/b] из классов",
+            "description": "Удаляет классы из элемента UI",
+            "params": {
+              "classes": {
+                "name": "Классы",
+                "desc": "Список классов, разделенных пробелами, которые нужно удалить из элемента"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Установить классы",
+            "display-text": "{my}: Установить классы на [b]{0}[/b]",
+            "description": "Устанавливает классы элемента UI",
+            "params": {
+              "classes": {
+                "name": "Классы",
+                "desc": "Список классов, разделенных пробелами, которые нужно применить к элементу"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Установить включение",
+            "display-text": "{my}: Установить включение: [b]{0}[/b]",
+            "description": "Устанавливает состояние включения элемента UI",
+            "params": {
+              "enabled": {
+                "name": "Включено",
+                "desc": "Должен ли элемент UI быть включен"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Удалить свойство стиля",
+            "display-text": "{my}: Удалить свойство [b]{0}[/b] из стиля",
+            "description": "Удаляет конкретное свойство стиля из элемента UI",
+            "params": {
+              "property": {
+                "name": "Свойство",
+                "desc": "CSS-свойство для удаления"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Установить стиль",
+            "display-text": "{my}: Установить стиль на [i]{0}[/i]",
+            "description": "Устанавливает стиль элемента UI",
+            "params": {
+              "style": {
+                "name": "Стиль",
+                "desc": "Стиль, который нужно применить к элементу"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Установить свойство стиля",
+            "display-text": "{my}: Установить свойство стиля [b]{0}[/b] на [b]{1}[/b]",
+            "description": "Устанавливает конкретное свойство стиля элемента UI",
+            "params": {
+              "property": {
+                "name": "Свойство",
+                "desc": "CSS-свойство для установки"
+              },
+              "value": {
+                "name": "Значение",
+                "desc": "Значение для установки для свойства"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Включено",
+            "display-text": "{my}: Включено",
+            "description": "Проверяет, включен ли элемент UI",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

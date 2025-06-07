@@ -7,7 +7,11 @@
         "name": "यूआई",
         "description": "कंस्ट्रक्ट 3 के लिए एक फ्लेक्सबॉक्स लेआउट व्यवहार।",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "क्लासेस",
+          "flow": "प्रवाह",
+          "style": "शैली"
+        },
         "properties": {
           "enabled": {
             "name": "सक्षम",
@@ -22,8 +26,97 @@
             "desc": "तत्व पर लागू करने के लिए कस्टम शैलियाँ।"
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "क्लासेस जोड़ें",
+            "display-text": "{my}: [b]{0}[/b] को क्लासेस में जोड़ें",
+            "description": "यूआई तत्व में क्लासेस जोड़ता है",
+            "params": {
+              "classes": {
+                "name": "क्लासेस",
+                "desc": "तत्व में जोड़ने के लिए स्पेस-सेपरेटेड क्लासेस की सूची"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "क्लासेस हटाएँ",
+            "display-text": "{my}: [b]{0}[/b] को क्लासेस से हटाएँ",
+            "description": "यूआई तत्व से क्लासेस हटाता है",
+            "params": {
+              "classes": {
+                "name": "क्लासेस",
+                "desc": "तत्व से हटाने के लिए स्पेस-सेपरेटेड क्लासेस की सूची"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "क्लासेस सेट करें",
+            "display-text": "{my}: क्लासेस को [b]{0}[/b] पर सेट करें",
+            "description": "यूआई तत्व की क्लासेस सेट करता है",
+            "params": {
+              "classes": {
+                "name": "क्लासेस",
+                "desc": "तत्व पर लागू करने के लिए स्पेस-सेपरेटेड क्लासेस की सूची"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "सक्षम सेट करें",
+            "display-text": "{my}: सक्षम सेट करें: [b]{0}[/b]",
+            "description": "यूआई तत्व की सक्षम स्थिति सेट करता है",
+            "params": {
+              "enabled": {
+                "name": "सक्षम",
+                "desc": "क्या यूआई तत्व सक्षम होना चाहिए"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "शैली संपत्ति हटाएँ",
+            "display-text": "{my}: शैली से संपत्ति [b]{0}[/b] हटाएँ",
+            "description": "यूआई तत्व से एक विशिष्ट शैली संपत्ति हटाता है",
+            "params": {
+              "property": {
+                "name": "संपत्ति",
+                "desc": "हटाने के लिए CSS संपत्ति"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "शैली सेट करें",
+            "display-text": "{my}: शैली को [i]{0}[/i] पर सेट करें",
+            "description": "यूआई तत्व की शैली सेट करता है",
+            "params": {
+              "style": {
+                "name": "शैली",
+                "desc": "तत्व पर लागू करने के लिए शैली"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "शैली संपत्ति सेट करें",
+            "display-text": "{my}: शैली संपत्ति [b]{0}[/b] को [b]{1}[/b] पर सेट करें",
+            "description": "यूआई तत्व की एक विशिष्ट शैली संपत्ति सेट करता है",
+            "params": {
+              "property": {
+                "name": "संपत्ति",
+                "desc": "सेट करने के लिए CSS संपत्ति"
+              },
+              "value": {
+                "name": "मान",
+                "desc": "संपत्ति के लिए सेट करने के लिए मान"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "क्या सक्षम है",
+            "display-text": "{my}: क्या सक्षम है",
+            "description": "जांचता है कि क्या यूआई तत्व सक्षम है",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

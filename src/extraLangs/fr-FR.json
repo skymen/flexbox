@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "Un comportement de mise en page flexbox pour Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "classes",
+          "flow": "flux",
+          "style": "style"
+        },
         "properties": {
           "enabled": {
             "name": "Activé",
@@ -22,8 +26,97 @@
             "desc": "Styles personnalisés à appliquer à l'élément."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Ajouter des Classes",
+            "display-text": "{my}: Ajouter [b]{0}[/b] aux classes",
+            "description": "Ajoute des classes à l'élément UI",
+            "params": {
+              "classes": {
+                "name": "Classes",
+                "desc": "Une liste de classes séparées par des espaces à ajouter à l'élément"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Supprimer des Classes",
+            "display-text": "{my}: Supprimer [b]{0}[/b] des classes",
+            "description": "Supprime des classes de l'élément UI",
+            "params": {
+              "classes": {
+                "name": "Classes",
+                "desc": "Une liste de classes séparées par des espaces à supprimer de l'élément"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Définir des Classes",
+            "display-text": "{my}: Définir les classes sur [b]{0}[/b]",
+            "description": "Définit les classes de l'élément UI",
+            "params": {
+              "classes": {
+                "name": "Classes",
+                "desc": "Une liste de classes séparées par des espaces à appliquer à l'élément"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Définir Activé",
+            "display-text": "{my}: Définir Activé : [b]{0}[/b]",
+            "description": "Définit l'état activé de l'élément UI",
+            "params": {
+              "enabled": {
+                "name": "Activé",
+                "desc": "Indique si l'élément UI doit être activé"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Supprimer la Propriété de Style",
+            "display-text": "{my}: Supprimer la propriété [b]{0}[/b] du style",
+            "description": "Supprime une propriété de style spécifique de l'élément UI",
+            "params": {
+              "property": {
+                "name": "Propriété",
+                "desc": "La propriété CSS à supprimer"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Définir le Style",
+            "display-text": "{my}: Définir le style sur [i]{0}[/i]",
+            "description": "Définit le style de l'élément UI",
+            "params": {
+              "style": {
+                "name": "Style",
+                "desc": "Le style à appliquer à l'élément"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Définir la Propriété de Style",
+            "display-text": "{my}: Définir la propriété de style [b]{0}[/b] sur [b]{1}[/b]",
+            "description": "Définit une propriété de style spécifique de l'élément UI",
+            "params": {
+              "property": {
+                "name": "Propriété",
+                "desc": "La propriété CSS à définir"
+              },
+              "value": {
+                "name": "Valeur",
+                "desc": "La valeur à définir pour la propriété"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Est Activé",
+            "display-text": "{my}: Est Activé",
+            "description": "Vérifie si l'élément UI est activé",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

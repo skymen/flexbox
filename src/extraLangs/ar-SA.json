@@ -7,7 +7,11 @@
         "name": "واجهة المستخدم",
         "description": "سلوك تخطيط flexbox لـ Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "الفئات",
+          "flow": "التدفق",
+          "style": "النمط"
+        },
         "properties": {
           "enabled": {
             "name": "مفعل",
@@ -22,8 +26,97 @@
             "desc": "أنماط مخصصة لتطبيقها على العنصر."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "إضافة فئات",
+            "display-text": "{my}: إضافة [b]{0}[/b] إلى الفئات",
+            "description": "يضيف فئات إلى عنصر واجهة المستخدم",
+            "params": {
+              "classes": {
+                "name": "الفئات",
+                "desc": "قائمة مفصولة بمسافات من الفئات لإضافتها إلى العنصر"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "إزالة فئات",
+            "display-text": "{my}: إزالة [b]{0}[/b] من الفئات",
+            "description": "يزيل فئات من عنصر واجهة المستخدم",
+            "params": {
+              "classes": {
+                "name": "الفئات",
+                "desc": "قائمة مفصولة بمسافات من الفئات لإزالتها من العنصر"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "تعيين فئات",
+            "display-text": "{my}: تعيين الفئات إلى [b]{0}[/b]",
+            "description": "يحدد الفئات لعنصر واجهة المستخدم",
+            "params": {
+              "classes": {
+                "name": "الفئات",
+                "desc": "قائمة مفصولة بمسافات من الفئات لتطبيقها على العنصر"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "تعيين مفعل",
+            "display-text": "{my}: تعيين مفعل: [b]{0}[/b]",
+            "description": "يحدد حالة التفعيل لعنصر واجهة المستخدم",
+            "params": {
+              "enabled": {
+                "name": "مفعل",
+                "desc": "ما إذا كان يجب تفعيل عنصر واجهة المستخدم"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "إزالة خاصية النمط",
+            "display-text": "{my}: إزالة الخاصية [b]{0}[/b] من النمط",
+            "description": "يزيل خاصية نمط معينة من عنصر واجهة المستخدم",
+            "params": {
+              "property": {
+                "name": "الخاصية",
+                "desc": "خاصية CSS لإزالتها"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "تعيين النمط",
+            "display-text": "{my}: تعيين النمط إلى [i]{0}[/i]",
+            "description": "يحدد نمط عنصر واجهة المستخدم",
+            "params": {
+              "style": {
+                "name": "النمط",
+                "desc": "النمط لتطبيقه على العنصر"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "تعيين خاصية النمط",
+            "display-text": "{my}: تعيين خاصية النمط [b]{0}[/b] إلى [b]{1}[/b]",
+            "description": "يحدد خاصية نمط معينة لعنصر واجهة المستخدم",
+            "params": {
+              "property": {
+                "name": "الخاصية",
+                "desc": "خاصية CSS لتعيينها"
+              },
+              "value": {
+                "name": "القيمة",
+                "desc": "القيمة لتعيينها للخاصية"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "هل مفعل",
+            "display-text": "{my}: هل مفعل",
+            "description": "يتحقق مما إذا كان عنصر واجهة المستخدم مفعلًا",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

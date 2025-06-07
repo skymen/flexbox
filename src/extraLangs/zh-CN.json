@@ -5,13 +5,17 @@
     "behaviors": {
       "flexbox": {
         "name": "用户界面",
-        "description": "Construct 3 的 Flexbox 布局行为。",
+        "description": "Construct 3 的 flexbox 布局行为。",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "类",
+          "flow": "流",
+          "style": "样式"
+        },
         "properties": {
           "enabled": {
             "name": "启用",
-            "desc": "是否启用 Flexbox 行为。"
+            "desc": "flexbox 行为是否启用。"
           },
           "classes": {
             "name": "类",
@@ -22,8 +26,97 @@
             "desc": "要应用于元素的自定义样式。"
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "添加类",
+            "display-text": "{my}: 将 [b]{0}[/b] 添加到类",
+            "description": "将类添加到 UI 元素",
+            "params": {
+              "classes": {
+                "name": "类",
+                "desc": "要添加到元素的以空格分隔的类列表"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "移除类",
+            "display-text": "{my}: 从类中移除 [b]{0}[/b]",
+            "description": "从 UI 元素中移除类",
+            "params": {
+              "classes": {
+                "name": "类",
+                "desc": "要从元素中移除的以空格分隔的类列表"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "设置类",
+            "display-text": "{my}: 将类设置为 [b]{0}[/b]",
+            "description": "设置 UI 元素的类",
+            "params": {
+              "classes": {
+                "name": "类",
+                "desc": "要应用于元素的以空格分隔的类列表"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "设置启用",
+            "display-text": "{my}: 设置启用: [b]{0}[/b]",
+            "description": "设置 UI 元素的启用状态",
+            "params": {
+              "enabled": {
+                "name": "启用",
+                "desc": "UI 元素是否应该启用"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "移除样式属性",
+            "display-text": "{my}: 从样式中移除属性 [b]{0}[/b]",
+            "description": "从 UI 元素中移除特定样式属性",
+            "params": {
+              "property": {
+                "name": "属性",
+                "desc": "要移除的 CSS 属性"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "设置样式",
+            "display-text": "{my}: 将样式设置为 [i]{0}[/i]",
+            "description": "设置 UI 元素的样式",
+            "params": {
+              "style": {
+                "name": "样式",
+                "desc": "要应用于元素的样式"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "设置样式属性",
+            "display-text": "{my}: 将样式属性 [b]{0}[/b] 设置为 [b]{1}[/b]",
+            "description": "设置 UI 元素的特定样式属性",
+            "params": {
+              "property": {
+                "name": "属性",
+                "desc": "要设置的 CSS 属性"
+              },
+              "value": {
+                "name": "值",
+                "desc": "要为属性设置的值"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "是否启用",
+            "display-text": "{my}: 是否启用",
+            "description": "检查 UI 元素是否启用",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

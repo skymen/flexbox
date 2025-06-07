@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "Ein Flexbox-Layoutverhalten für Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "Klassen",
+          "flow": "Fluss",
+          "style": "Stil"
+        },
         "properties": {
           "enabled": {
             "name": "Aktiviert",
@@ -22,8 +26,97 @@
             "desc": "Benutzerdefinierte Stile, die auf das Element angewendet werden sollen."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Klassen hinzufügen",
+            "display-text": "{my}: [b]{0}[/b] zu Klassen hinzufügen",
+            "description": "Fügt Klassen zum UI-Element hinzu",
+            "params": {
+              "classes": {
+                "name": "Klassen",
+                "desc": "Eine durch Leerzeichen getrennte Liste von Klassen, die dem Element hinzugefügt werden sollen"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Klassen entfernen",
+            "display-text": "{my}: [b]{0}[/b] von Klassen entfernen",
+            "description": "Entfernt Klassen vom UI-Element",
+            "params": {
+              "classes": {
+                "name": "Klassen",
+                "desc": "Eine durch Leerzeichen getrennte Liste von Klassen, die vom Element entfernt werden sollen"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Klassen festlegen",
+            "display-text": "{my}: Klassen auf [b]{0}[/b] festlegen",
+            "description": "Legt die Klassen des UI-Elements fest",
+            "params": {
+              "classes": {
+                "name": "Klassen",
+                "desc": "Eine durch Leerzeichen getrennte Liste von Klassen, die auf das Element angewendet werden sollen"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Aktiviert festlegen",
+            "display-text": "{my}: Aktiviert: [b]{0}[/b]",
+            "description": "Legt den Aktivierungsstatus des UI-Elements fest",
+            "params": {
+              "enabled": {
+                "name": "Aktiviert",
+                "desc": "Ob das UI-Element aktiviert sein soll"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Stileigenschaft entfernen",
+            "display-text": "{my}: Eigenschaft [b]{0}[/b] aus Stil entfernen",
+            "description": "Entfernt eine bestimmte Stileigenschaft vom UI-Element",
+            "params": {
+              "property": {
+                "name": "Eigenschaft",
+                "desc": "Die CSS-Eigenschaft, die entfernt werden soll"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Stil festlegen",
+            "display-text": "{my}: Stil auf [i]{0}[/i] festlegen",
+            "description": "Legt den Stil des UI-Elements fest",
+            "params": {
+              "style": {
+                "name": "Stil",
+                "desc": "Der Stil, der auf das Element angewendet werden soll"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Stileigenschaft festlegen",
+            "display-text": "{my}: Stileigenschaft [b]{0}[/b] auf [b]{1}[/b] festlegen",
+            "description": "Legt eine bestimmte Stileigenschaft des UI-Elements fest",
+            "params": {
+              "property": {
+                "name": "Eigenschaft",
+                "desc": "Die CSS-Eigenschaft, die festgelegt werden soll"
+              },
+              "value": {
+                "name": "Wert",
+                "desc": "Der Wert, der für die Eigenschaft festgelegt werden soll"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Ist aktiviert",
+            "display-text": "{my}: Ist aktiviert",
+            "description": "Überprüft, ob das UI-Element aktiviert ist",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

@@ -7,7 +7,11 @@
         "name": "Interfaccia Utente",
         "description": "Un comportamento di layout flexbox per Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "classi",
+          "flow": "flusso",
+          "style": "stile"
+        },
         "properties": {
           "enabled": {
             "name": "Abilitato",
@@ -22,8 +26,97 @@
             "desc": "Stili personalizzati da applicare all'elemento."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Aggiungi Classi",
+            "display-text": "{my}: Aggiungi [b]{0}[/b] alle classi",
+            "description": "Aggiunge classi all'elemento UI",
+            "params": {
+              "classes": {
+                "name": "Classi",
+                "desc": "Un elenco di classi separate da spazi da aggiungere all'elemento"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Rimuovi Classi",
+            "display-text": "{my}: Rimuovi [b]{0}[/b] dalle classi",
+            "description": "Rimuove classi dall'elemento UI",
+            "params": {
+              "classes": {
+                "name": "Classi",
+                "desc": "Un elenco di classi separate da spazi da rimuovere dall'elemento"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Imposta Classi",
+            "display-text": "{my}: Imposta classi su [b]{0}[/b]",
+            "description": "Imposta le classi dell'elemento UI",
+            "params": {
+              "classes": {
+                "name": "Classi",
+                "desc": "Un elenco di classi separate da spazi da applicare all'elemento"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Imposta Abilitato",
+            "display-text": "{my}: Imposta Abilitato: [b]{0}[/b]",
+            "description": "Imposta lo stato abilitato dell'elemento UI",
+            "params": {
+              "enabled": {
+                "name": "Abilitato",
+                "desc": "Se l'elemento UI deve essere abilitato"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Rimuovi Proprietà Stile",
+            "display-text": "{my}: Rimuovi proprietà [b]{0}[/b] dallo stile",
+            "description": "Rimuove una specifica proprietà di stile dall'elemento UI",
+            "params": {
+              "property": {
+                "name": "Proprietà",
+                "desc": "La proprietà CSS da rimuovere"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Imposta Stile",
+            "display-text": "{my}: Imposta stile su [i]{0}[/i]",
+            "description": "Imposta lo stile dell'elemento UI",
+            "params": {
+              "style": {
+                "name": "Stile",
+                "desc": "Lo stile da applicare all'elemento"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Imposta Proprietà Stile",
+            "display-text": "{my}: Imposta proprietà stile [b]{0}[/b] su [b]{1}[/b]",
+            "description": "Imposta una specifica proprietà di stile dell'elemento UI",
+            "params": {
+              "property": {
+                "name": "Proprietà",
+                "desc": "La proprietà CSS da impostare"
+              },
+              "value": {
+                "name": "Valore",
+                "desc": "Il valore da impostare per la proprietà"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "È Abilitato",
+            "display-text": "{my}: È Abilitato",
+            "description": "Controlla se l'elemento UI è abilitato",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

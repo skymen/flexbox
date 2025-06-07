@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "En flexbox-layoutatferd for Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "klasser",
+          "flow": "flyt",
+          "style": "stil"
+        },
         "properties": {
           "enabled": {
             "name": "Aktivert",
@@ -15,15 +19,104 @@
           },
           "classes": {
             "name": "Klasser",
-            "desc": "En liste med klasser atskilt med mellomrom som skal brukes på elementet."
+            "desc": "En liste med klasser separert med mellomrom som skal brukes på elementet."
           },
           "style": {
             "name": "Stil",
             "desc": "Egendefinerte stiler som skal brukes på elementet."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Legg til klasser",
+            "display-text": "{my}: Legg til [b]{0}[/b] i klasser",
+            "description": "Legger til klasser til UI-elementet",
+            "params": {
+              "classes": {
+                "name": "Klasser",
+                "desc": "En liste med klasser separert med mellomrom som skal legges til elementet"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Fjern klasser",
+            "display-text": "{my}: Fjern [b]{0}[/b] fra klasser",
+            "description": "Fjerner klasser fra UI-elementet",
+            "params": {
+              "classes": {
+                "name": "Klasser",
+                "desc": "En liste med klasser separert med mellomrom som skal fjernes fra elementet"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Sett klasser",
+            "display-text": "{my}: Sett klasser til [b]{0}[/b]",
+            "description": "Setter klassene til UI-elementet",
+            "params": {
+              "classes": {
+                "name": "Klasser",
+                "desc": "En liste med klasser separert med mellomrom som skal brukes på elementet"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Sett aktivert",
+            "display-text": "{my}: Sett aktivert: [b]{0}[/b]",
+            "description": "Setter den aktiverte tilstanden til UI-elementet",
+            "params": {
+              "enabled": {
+                "name": "Aktivert",
+                "desc": "Om UI-elementet skal være aktivert"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Fjern stil-egenskap",
+            "display-text": "{my}: Fjern egenskap [b]{0}[/b] fra stil",
+            "description": "Fjerner en spesifikk stil-egenskap fra UI-elementet",
+            "params": {
+              "property": {
+                "name": "Egenskap",
+                "desc": "CSS-egenskapen som skal fjernes"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Sett stil",
+            "display-text": "{my}: Sett stil til [i]{0}[/i]",
+            "description": "Setter stilen til UI-elementet",
+            "params": {
+              "style": {
+                "name": "Stil",
+                "desc": "Stilen som skal brukes på elementet"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Sett stil-egenskap",
+            "display-text": "{my}: Sett stil-egenskap [b]{0}[/b] til [b]{1}[/b]",
+            "description": "Setter en spesifikk stil-egenskap for UI-elementet",
+            "params": {
+              "property": {
+                "name": "Egenskap",
+                "desc": "CSS-egenskapen som skal settes"
+              },
+              "value": {
+                "name": "Verdi",
+                "desc": "Verdien som skal settes for egenskapen"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Er aktivert",
+            "display-text": "{my}: Er aktivert",
+            "description": "Sjekker om UI-elementet er aktivert",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

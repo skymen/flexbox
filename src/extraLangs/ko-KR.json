@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "Construct 3용 플렉스박스 레이아웃 동작.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "클래스",
+          "flow": "흐름",
+          "style": "스타일"
+        },
         "properties": {
           "enabled": {
             "name": "활성화",
@@ -22,8 +26,97 @@
             "desc": "요소에 적용할 사용자 정의 스타일."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "클래스 추가",
+            "display-text": "{my}: 클래스에 [b]{0}[/b] 추가",
+            "description": "UI 요소에 클래스를 추가합니다.",
+            "params": {
+              "classes": {
+                "name": "클래스",
+                "desc": "요소에 추가할 클래스의 공백으로 구분된 목록"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "클래스 제거",
+            "display-text": "{my}: 클래스에서 [b]{0}[/b] 제거",
+            "description": "UI 요소에서 클래스를 제거합니다.",
+            "params": {
+              "classes": {
+                "name": "클래스",
+                "desc": "요소에서 제거할 클래스의 공백으로 구분된 목록"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "클래스 설정",
+            "display-text": "{my}: 클래스를 [b]{0}[/b]로 설정",
+            "description": "UI 요소의 클래스를 설정합니다.",
+            "params": {
+              "classes": {
+                "name": "클래스",
+                "desc": "요소에 적용할 클래스의 공백으로 구분된 목록"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "활성화 설정",
+            "display-text": "{my}: 활성화: [b]{0}[/b] 설정",
+            "description": "UI 요소의 활성화 상태를 설정합니다.",
+            "params": {
+              "enabled": {
+                "name": "활성화",
+                "desc": "UI 요소가 활성화되어야 하는지 여부"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "스타일 속성 제거",
+            "display-text": "{my}: 스타일에서 속성 [b]{0}[/b] 제거",
+            "description": "UI 요소에서 특정 스타일 속성을 제거합니다.",
+            "params": {
+              "property": {
+                "name": "속성",
+                "desc": "제거할 CSS 속성"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "스타일 설정",
+            "display-text": "{my}: 스타일을 [i]{0}[/i]로 설정",
+            "description": "UI 요소의 스타일을 설정합니다.",
+            "params": {
+              "style": {
+                "name": "스타일",
+                "desc": "요소에 적용할 스타일"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "스타일 속성 설정",
+            "display-text": "{my}: 스타일 속성 [b]{0}[/b]을 [b]{1}[/b]로 설정",
+            "description": "UI 요소의 특정 스타일 속성을 설정합니다.",
+            "params": {
+              "property": {
+                "name": "속성",
+                "desc": "설정할 CSS 속성"
+              },
+              "value": {
+                "name": "값",
+                "desc": "속성에 설정할 값"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "활성화 여부",
+            "display-text": "{my}: 활성화 여부",
+            "description": "UI 요소가 활성화되어 있는지 확인합니다.",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

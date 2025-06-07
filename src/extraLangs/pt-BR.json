@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "Um comportamento de layout flexbox para o Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "classes",
+          "flow": "fluxo",
+          "style": "estilo"
+        },
         "properties": {
           "enabled": {
             "name": "Habilitado",
@@ -22,8 +26,97 @@
             "desc": "Estilos personalizados a serem aplicados ao elemento."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Adicionar Classes",
+            "display-text": "{my}: Adicionar [b]{0}[/b] às classes",
+            "description": "Adiciona classes ao elemento UI",
+            "params": {
+              "classes": {
+                "name": "Classes",
+                "desc": "Uma lista de classes separadas por espaço a serem adicionadas ao elemento"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Remover Classes",
+            "display-text": "{my}: Remover [b]{0}[/b] das classes",
+            "description": "Remove classes do elemento UI",
+            "params": {
+              "classes": {
+                "name": "Classes",
+                "desc": "Uma lista de classes separadas por espaço a serem removidas do elemento"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Definir Classes",
+            "display-text": "{my}: Definir classes para [b]{0}[/b]",
+            "description": "Define as classes do elemento UI",
+            "params": {
+              "classes": {
+                "name": "Classes",
+                "desc": "Uma lista de classes separadas por espaço a serem aplicadas ao elemento"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Definir Habilitado",
+            "display-text": "{my}: Definir Habilitado: [b]{0}[/b]",
+            "description": "Define o estado habilitado do elemento UI",
+            "params": {
+              "enabled": {
+                "name": "Habilitado",
+                "desc": "Se o elemento UI deve estar habilitado"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Remover Propriedade de Estilo",
+            "display-text": "{my}: Remover propriedade [b]{0}[/b] do estilo",
+            "description": "Remove uma propriedade de estilo específica do elemento UI",
+            "params": {
+              "property": {
+                "name": "Propriedade",
+                "desc": "A propriedade CSS a ser removida"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Definir Estilo",
+            "display-text": "{my}: Definir estilo para [i]{0}[/i]",
+            "description": "Define o estilo do elemento UI",
+            "params": {
+              "style": {
+                "name": "Estilo",
+                "desc": "O estilo a ser aplicado ao elemento"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Definir Propriedade de Estilo",
+            "display-text": "{my}: Definir propriedade de estilo [b]{0}[/b] para [b]{1}[/b]",
+            "description": "Define uma propriedade de estilo específica do elemento UI",
+            "params": {
+              "property": {
+                "name": "Propriedade",
+                "desc": "A propriedade CSS a ser definida"
+              },
+              "value": {
+                "name": "Valor",
+                "desc": "O valor a ser definido para a propriedade"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Está Habilitado",
+            "display-text": "{my}: Está Habilitado",
+            "description": "Verifica se o elemento UI está habilitado",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

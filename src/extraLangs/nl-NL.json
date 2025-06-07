@@ -7,7 +7,11 @@
         "name": "UI",
         "description": "Een flexbox lay-out gedrag voor Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "klassen",
+          "flow": "stroom",
+          "style": "stijl"
+        },
         "properties": {
           "enabled": {
             "name": "Ingeschakeld",
@@ -22,8 +26,97 @@
             "desc": "Aangepaste stijlen die op het element moeten worden toegepast."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Klassen Toevoegen",
+            "display-text": "{my}: Voeg [b]{0}[/b] toe aan klassen",
+            "description": "Voegt klassen toe aan het UI-element",
+            "params": {
+              "classes": {
+                "name": "Klassen",
+                "desc": "Een spatie-gescheiden lijst van klassen die aan het element moeten worden toegevoegd"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Klassen Verwijderen",
+            "display-text": "{my}: Verwijder [b]{0}[/b] uit klassen",
+            "description": "Verwijdert klassen van het UI-element",
+            "params": {
+              "classes": {
+                "name": "Klassen",
+                "desc": "Een spatie-gescheiden lijst van klassen die uit het element moeten worden verwijderd"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Stel Klassen In",
+            "display-text": "{my}: Stel klassen in op [b]{0}[/b]",
+            "description": "Stelt de klassen van het UI-element in",
+            "params": {
+              "classes": {
+                "name": "Klassen",
+                "desc": "Een spatie-gescheiden lijst van klassen die op het element moeten worden toegepast"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Stel Ingeschakeld In",
+            "display-text": "{my}: Stel Ingeschakeld in: [b]{0}[/b]",
+            "description": "Stelt de ingeschakelde status van het UI-element in",
+            "params": {
+              "enabled": {
+                "name": "Ingeschakeld",
+                "desc": "Of het UI-element ingeschakeld moet zijn"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Verwijder Stijl Eigenschap",
+            "display-text": "{my}: Verwijder eigenschap [b]{0}[/b] uit stijl",
+            "description": "Verwijdert een specifieke stijl eigenschap van het UI-element",
+            "params": {
+              "property": {
+                "name": "Eigenschap",
+                "desc": "De CSS-eigenschap die moet worden verwijderd"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Stel Stijl In",
+            "display-text": "{my}: Stel stijl in op [i]{0}[/i]",
+            "description": "Stelt de stijl van het UI-element in",
+            "params": {
+              "style": {
+                "name": "Stijl",
+                "desc": "De stijl die op het element moet worden toegepast"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Stel Stijl Eigenschap In",
+            "display-text": "{my}: Stel stijl eigenschap [b]{0}[/b] in op [b]{1}[/b]",
+            "description": "Stelt een specifieke stijl eigenschap van het UI-element in",
+            "params": {
+              "property": {
+                "name": "Eigenschap",
+                "desc": "De CSS-eigenschap die moet worden ingesteld"
+              },
+              "value": {
+                "name": "Waarde",
+                "desc": "De waarde die voor de eigenschap moet worden ingesteld"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Is Ingeschakeld",
+            "display-text": "{my}: Is Ingeschakeld",
+            "description": "Controleert of het UI-element is ingeschakeld",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

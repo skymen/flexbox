@@ -7,11 +7,15 @@
         "name": "Kullanıcı Arayüzü",
         "description": "Construct 3 için bir flexbox düzen davranışı.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "sınıflar",
+          "flow": "akış",
+          "style": "stil"
+        },
         "properties": {
           "enabled": {
             "name": "Etkin",
-            "desc": "Flexbox davranışının etkin olup olmadığı."
+            "desc": "Flexbox davranışının etkin olup olmadığını belirtir."
           },
           "classes": {
             "name": "Sınıflar",
@@ -22,8 +26,97 @@
             "desc": "Eleman için uygulanacak özel stiller."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Sınıflar Ekle",
+            "display-text": "{my}: Sınıflara [b]{0}[/b] ekle",
+            "description": "UI elemanına sınıflar ekler",
+            "params": {
+              "classes": {
+                "name": "Sınıflar",
+                "desc": "Eleman için eklenilecek sınıfların boşlukla ayrılmış listesi"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Sınıfları Kaldır",
+            "display-text": "{my}: Sınıflardan [b]{0}[/b] kaldır",
+            "description": "UI elemanından sınıfları kaldırır",
+            "params": {
+              "classes": {
+                "name": "Sınıflar",
+                "desc": "Elemandan kaldırılacak sınıfların boşlukla ayrılmış listesi"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Sınıfları Ayarla",
+            "display-text": "{my}: Sınıfları [b]{0}[/b] olarak ayarla",
+            "description": "UI elemanının sınıflarını ayarlar",
+            "params": {
+              "classes": {
+                "name": "Sınıflar",
+                "desc": "Eleman için uygulanacak sınıfların boşlukla ayrılmış listesi"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Etkinliği Ayarla",
+            "display-text": "{my}: Etkin: [b]{0}[/b] olarak ayarla",
+            "description": "UI elemanının etkin durumunu ayarlar",
+            "params": {
+              "enabled": {
+                "name": "Etkin",
+                "desc": "UI elemanının etkin olup olmaması gerektiğini belirtir"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Stil Özelliğini Kaldır",
+            "display-text": "{my}: Stilden [b]{0}[/b] özelliğini kaldır",
+            "description": "UI elemanından belirli bir stil özelliğini kaldırır",
+            "params": {
+              "property": {
+                "name": "Özellik",
+                "desc": "Kaldırılacak CSS özelliği"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Stili Ayarla",
+            "display-text": "{my}: Stili [i]{0}[/i] olarak ayarla",
+            "description": "UI elemanının stilini ayarlar",
+            "params": {
+              "style": {
+                "name": "Stil",
+                "desc": "Eleman için uygulanacak stil"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Stil Özelliğini Ayarla",
+            "display-text": "{my}: Stil özelliğini [b]{0}[/b] olarak [b]{1}[/b] ayarla",
+            "description": "UI elemanının belirli bir stil özelliğini ayarlar",
+            "params": {
+              "property": {
+                "name": "Özellik",
+                "desc": "Ayarlanacak CSS özelliği"
+              },
+              "value": {
+                "name": "Değer",
+                "desc": "Özellik için ayarlanacak değer"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Etkin mi",
+            "display-text": "{my}: Etkin mi",
+            "description": "UI elemanının etkin olup olmadığını kontrol eder",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }

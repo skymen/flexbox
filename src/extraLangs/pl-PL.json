@@ -1,16 +1,20 @@
 {
   "languageTag": "pl-PL",
-  "fileDescription": "Ciągi dla flexbox.",
+  "fileDescription": "Napisy dla flexbox.",
   "text": {
     "behaviors": {
       "flexbox": {
         "name": "UI",
         "description": "Zachowanie układu flexbox dla Construct 3.",
         "help-url": "https://constructfund.github.io/construct3-ui",
-        "aceCategories": {},
+        "aceCategories": {
+          "classes": "klasy",
+          "flow": "przepływ",
+          "style": "styl"
+        },
         "properties": {
           "enabled": {
-            "name": "Włączone",
+            "name": "Włączony",
             "desc": "Czy zachowanie flexbox jest włączone."
           },
           "classes": {
@@ -22,8 +26,97 @@
             "desc": "Niestandardowe style do zastosowania w elemencie."
           }
         },
-        "actions": {},
-        "conditions": {},
+        "actions": {
+          "AddClasses": {
+            "list-name": "Dodaj Klasy",
+            "display-text": "{my}: Dodaj [b]{0}[/b] do klas",
+            "description": "Dodaje klasy do elementu UI",
+            "params": {
+              "classes": {
+                "name": "Klasy",
+                "desc": "Lista klas oddzielonych spacjami do dodania do elementu"
+              }
+            }
+          },
+          "RemoveClasses": {
+            "list-name": "Usuń Klasy",
+            "display-text": "{my}: Usuń [b]{0}[/b] z klas",
+            "description": "Usuwa klasy z elementu UI",
+            "params": {
+              "classes": {
+                "name": "Klasy",
+                "desc": "Lista klas oddzielonych spacjami do usunięcia z elementu"
+              }
+            }
+          },
+          "SetClasses": {
+            "list-name": "Ustaw Klasy",
+            "display-text": "{my}: Ustaw klasy na [b]{0}[/b]",
+            "description": "Ustawia klasy elementu UI",
+            "params": {
+              "classes": {
+                "name": "Klasy",
+                "desc": "Lista klas oddzielonych spacjami do zastosowania w elemencie"
+              }
+            }
+          },
+          "SetEnabled": {
+            "list-name": "Ustaw Włączony",
+            "display-text": "{my}: Ustaw Włączony: [b]{0}[/b]",
+            "description": "Ustawia stan włączenia elementu UI",
+            "params": {
+              "enabled": {
+                "name": "Włączony",
+                "desc": "Czy element UI powinien być włączony"
+              }
+            }
+          },
+          "RemoveStyleProperty": {
+            "list-name": "Usuń Właściwość Stylu",
+            "display-text": "{my}: Usuń właściwość [b]{0}[/b] ze stylu",
+            "description": "Usuwa określoną właściwość stylu z elementu UI",
+            "params": {
+              "property": {
+                "name": "Właściwość",
+                "desc": "Właściwość CSS do usunięcia"
+              }
+            }
+          },
+          "SetStyle": {
+            "list-name": "Ustaw Styl",
+            "display-text": "{my}: Ustaw styl na [i]{0}[/i]",
+            "description": "Ustawia styl elementu UI",
+            "params": {
+              "style": {
+                "name": "Styl",
+                "desc": "Styl do zastosowania w elemencie"
+              }
+            }
+          },
+          "SetStyleProperty": {
+            "list-name": "Ustaw Właściwość Stylu",
+            "display-text": "{my}: Ustaw właściwość stylu [b]{0}[/b] na [b]{1}[/b]",
+            "description": "Ustawia określoną właściwość stylu elementu UI",
+            "params": {
+              "property": {
+                "name": "Właściwość",
+                "desc": "Właściwość CSS do ustawienia"
+              },
+              "value": {
+                "name": "Wartość",
+                "desc": "Wartość do ustawienia dla właściwości"
+              }
+            }
+          }
+        },
+        "conditions": {
+          "IsEnabled": {
+            "list-name": "Czy Włączony",
+            "display-text": "{my}: Czy Włączony",
+            "description": "Sprawdza, czy element UI jest włączony",
+            "params": {}
+          }
+        },
         "expressions": {}
       }
     }
