@@ -111,7 +111,6 @@ export default function (parentClass) {
         enabled: this.enabled,
         classes: this.classes,
         style: this.style,
-        computedStyles: this._computedStyles,
       };
     }
 
@@ -119,8 +118,8 @@ export default function (parentClass) {
       this.enabled = o.enabled !== undefined ? o.enabled : true;
       this.classes = o.classes !== undefined ? o.classes : [];
       this.style = o.style !== undefined ? o.style : {};
-      this._computedStyles =
-        o.computedStyles !== undefined ? o.computedStyles : {};
+      // Always recompute styles after a load so stale cached styles are never restored
+      this._computedStyles = undefined;
     }
   };
 }

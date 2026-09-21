@@ -3,5 +3,10 @@
     "added": "",
     "changed": "",
     "fixed": "Bug with how plugin is structured\nShould no longer crash on older versions of C3"
+  },
+  "1.0.1.0": {
+    "added": "",
+    "changed": "",
+    "fixed": "Typo that broke set style and class"
   }
 }
