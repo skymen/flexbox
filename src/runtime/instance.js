@@ -9,7 +9,7 @@ export default function (parentClass) {
       this.enabled = true;
       this.classes = [];
       this.style = {};
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
       if (properties) {
         this.enabled = properties[0];
         this.setClasses(properties[1]);
@@ -24,24 +24,24 @@ export default function (parentClass) {
     addClass(...classes) {
       classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
       this.classes = [...new Set([...this.classes, ...classes])];
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
     }
 
     removeClass(...classes) {
       classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
       this.classes = this.classes.filter((c) => !classes.includes(c));
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
     }
 
     setClasses(...classes) {
       classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
       this.classes = classes;
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
     }
 
     setStyle(style) {
       this.style = this.behavior.controller.layout.parseStyle(style);
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
     }
 
     setStyleProperty(property, value) {
@@ -50,7 +50,7 @@ export default function (parentClass) {
         property,
         value
       );
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
     }
 
     removeStyleProperty(property) {
@@ -58,7 +58,7 @@ export default function (parentClass) {
         this.style,
         property
       );
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
     }
 
     _tick() {
@@ -119,7 +119,7 @@ export default function (parentClass) {
       this.classes = o.classes !== undefined ? o.classes : [];
       this.style = o.style !== undefined ? o.style : {};
       // Always recompute styles after a load so stale cached styles are never restored
-      this._computedStyles = undefined;
+      this._computedStyle = undefined;
     }
   };
 }

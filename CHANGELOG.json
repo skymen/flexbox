@@ -8,5 +8,10 @@
     "added": "",
     "changed": "",
     "fixed": "Typo that broke set style and class"
+  },
+  "1.0.1.1": {
+    "added": "",
+    "changed": "Use the layout engine's own style cache field name instead of how I fixed the typo in the previous version.",
+    "fixed": ""
   }
 }
