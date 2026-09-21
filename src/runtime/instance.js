@@ -10,6 +10,7 @@ export default function (parentClass) {
       this.classes = [];
       this.style = {};
       this._computedStyle = undefined;
+      this._created = false;
       if (properties) {
         this.enabled = properties[0];
         this.setClasses(properties[1]);
@@ -19,46 +20,53 @@ export default function (parentClass) {
 
     _postCreate() {
       this.instance.__flexbox_ui_element = this;
+      this._created = true;
+    }
+
+    _invalidateStyles() {
+      const layout = this.behavior?.controller?.layout;
+      if (this._created && layout) layout.invalidateStyles(this.instance);
+      else this._computedStyle = undefined;
     }
 
     addClass(...classes) {
       classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
       this.classes = [...new Set([...this.classes, ...classes])];
-      this._computedStyle = undefined;
+      this._invalidateStyles();
     }
 
     removeClass(...classes) {
       classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
       this.classes = this.classes.filter((c) => !classes.includes(c));
-      this._computedStyle = undefined;
+      this._invalidateStyles();
     }
 
     setClasses(...classes) {
       classes = classes.map((x) => x.split(" ").filter((c) => c.trim())).flat();
       this.classes = classes;
-      this._computedStyle = undefined;
+      this._invalidateStyles();
     }
 
     setStyle(style) {
       this.style = this.behavior.controller.layout.parseStyle(style);
-      this._computedStyle = undefined;
+      this._invalidateStyles();
     }
 
     setStyleProperty(property, value) {
       this.behavior.controller.layout.setPropertyInStyle(
         this.style,
         property,
-        value
+        value,
       );
-      this._computedStyle = undefined;
+      this._invalidateStyles();
     }
 
     removeStyleProperty(property) {
       this.behavior.controller.layout.removePropertyFromStyle(
         this.style,
-        property
+        property,
       );
-      this._computedStyle = undefined;
+      this._invalidateStyles();
     }
 
     _tick() {
@@ -80,7 +88,7 @@ export default function (parentClass) {
     off(tag, callback) {
       if (this.events[tag]) {
         this.events[tag] = this.events[tag].filter(
-          (event) => event.callback !== callback
+          (event) => event.callback !== callback,
         );
       }
     }

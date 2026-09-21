@@ -13,5 +13,10 @@
     "added": "",
     "changed": "Use the layout engine's own style cache field name instead of how I fixed the typo in the previous version.",
     "fixed": ""
+  },
+  "1.0.2.0": {
+    "added": "",
+    "changed": "Style and class changes notify the layout engine through its invalidateStyles method (requires UI Controller 1.2.0.0)",
+    "fixed": ""
   }
 }

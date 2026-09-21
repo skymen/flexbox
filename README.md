@@ -1,14 +1,14 @@
 <img src="./examples/cover.png" width="150" /><br>
 # UI
 <i>A flexbox layout behavior for Construct 3.</i> <br>
-### Version 1.0.1.1
+### Version 1.0.2.0
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/flexbox/releases/download/flexbox-1.0.1.1.c3addon/flexbox-1.0.1.1.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/flexbox/releases/download/flexbox-1.0.2.0.c3addon/flexbox-1.0.2.0.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/flexbox/releases) </sub> <br>
 
-#### What's New in 1.0.1.1
-- **Changed:** Use the layout engine's own style cache field name instead of how I fixed the typo in the previous version.
+#### What's New in 1.0.2.0
+- **Changed:** Style and class changes notify the layout engine through its invalidateStyles method (requires UI Controller 1.2.0.0)
 
 <sub>[View full changelog](#changelog)</sub>
 
@@ -84,6 +84,9 @@ npm run dev
 
 ---
 ## Changelog
+
+**1.0.2.0**
+- **Changed:** Style and class changes notify the layout engine through its invalidateStyles method (requires UI Controller 1.2.0.0)
 
 **1.0.1.1**
 - **Changed:** Use the layout engine's own style cache field name instead of how I fixed the typo in the previous version.
